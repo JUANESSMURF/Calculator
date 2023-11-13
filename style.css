@@ -1,0 +1,47 @@
+
+
+
+.appc300 {
+    height: 420px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+.appc300 form {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.text-field {
+    height: 25%;
+    width: 292px;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 50px;
+    border: none;
+    outline: none;
+}
+
+.buttons input{
+    
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    padding: 18px 23px;
+    margin: 3px;
+    border: 0;
+    border-radius: 100%;
+    background-color: rgb(59, 59, 59);
+
+    
+    
+
+}
