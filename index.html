@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="appc300">
+    <div id="appc300">
         <form name="calculator">
             <input class="text-field" type="textfield" name="ans" value="" autocomplete="off" readoly >
             <div class="buttons">
@@ -32,10 +32,10 @@
                 <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
                 <input type="button" value="+" onclick="document.calculator.ans.value+='+'">
                 <br>
-                <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
                 <input type="reset" value="c" >
-                <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
                 <input type="button" value="/" onclick="document.calculator.ans.value+='/'">
+                <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
             </div>
         </form>
     </div>
