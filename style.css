@@ -1,5 +1,10 @@
-
-
+/*It makes the calculator to be at the center of the page*/
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 #appc300 {
     height: 420px;
@@ -7,12 +12,14 @@
     border-radius: 5px;
     background-color: rgb(39, 39, 39);
     
+    
 }
 
 #appc300 form {
     height: 100%;
     width: 100%;
-    
+    border-radius: 32px;
+    box-shadow: 15px 15px 8px rgba(10, 0, 0, 0.5)
 }
 
 #appc300 input[type=textfield] {
@@ -26,23 +33,27 @@
     font-size: 50px;
     border: none;
     outline: none;
+    border-radius: 32px;
 }
 
 #appc300 input[type=button], input[type=reset]{
-    width: 22%;
+    width: 21.5%;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 27px;
     color: white;
-    padding: 18px 23px;
-    margin: 1px;
+    padding: 18px 20px;
+    margin: 1.5px;
     margin-top: 2px;
     border: 0;
     border-radius: 100%;
     background-color: rgb(59, 59, 59);
+}
 
-    
-    
+
+#appc300 .red {
+    background-color: rgb(82, 0, 0) !important;
+    color: white !important;
 
 }

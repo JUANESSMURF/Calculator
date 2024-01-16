@@ -13,31 +13,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="appc300">
-        <form name="calculator">
-            <input class="text-field" type="textfield" name="ans" value="" autocomplete="off" readoly >
-            <div class="buttons">
-                <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
-                <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
-                <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
-                <input type="button" value="x" onclick="document.calculator.ans.value+='*'">
-                <br>
-                <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
-                <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
-                <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
-                <input type="button" value="-" onclick="document.calculator.ans.value+='-'">
-                <br>
-                <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
-                <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
-                <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
-                <input type="button" value="+" onclick="document.calculator.ans.value+='+'">
-                <br>
-                <input type="reset" value="c" >
-                <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
-                <input type="button" value="/" onclick="document.calculator.ans.value+='/'">
-                <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
-            </div>
-        </form>
+    <div class="container">
+        <div id="appc300">
+            <form name="calculator">
+                <input class="text-field" type="textfield" name="ans" value="" autocomplete="off" readoly >
+                <div class="buttons">
+                    <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+                    <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+                    <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+                    <input type="button" value="x" onclick="document.calculator.ans.value+='*'" class="red">
+                    <br>
+                    <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+                    <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+                    <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+                    <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="red">
+                    <br>
+                    <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+                    <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+                    <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+                    <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="red">
+                    <br>
+                    <input type="reset" value="C" class="red">
+                    <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+                    <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="red">
+                    <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="red">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
