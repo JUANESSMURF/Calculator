@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="mainp">
     <div class="container">
         <div id="appc300">
             <form name="calculator">
@@ -33,10 +33,12 @@
                     <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
                     <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="red">
                     <br>
-                    <input type="reset" value="C" class="red">
-                    <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
-                    <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="red">
-                    <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="red">
+                    <div class="operation-buttons">
+                        <input type="reset" value="C" class="clear">
+                        <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+                        <input type="button" value="/" onclick="document.calculator.ans.value+='/'"class="division">
+                        <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                    </div>
                 </div>
             </form>
         </div>

@@ -1,9 +1,20 @@
 /*It makes the calculator to be at the center of the page*/
+#mainp {
+    background-color: rgba(170, 0, 0, 0.795);
+}
+
 .container { 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+}
+
+.buttons {
+    height: 290px;
+    width: 305px;
+    cursor:default;
 }
 
 #appc300 {
@@ -11,6 +22,8 @@
     width: 300px;
     border-radius: 5px;
     background-color: rgb(39, 39, 39);
+    box-shadow: 15px 15px 5px rgba(10, 0, 0, 0.5)
+    
     
     
 }
@@ -19,12 +32,13 @@
     height: 100%;
     width: 100%;
     border-radius: 32px;
-    box-shadow: 15px 15px 8px rgba(10, 0, 0, 0.5)
+
+    
 }
 
 #appc300 input[type=textfield] {
     height: 25%;
-    width: 292px;
+    width: 270px;
     cursor: default;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
@@ -34,6 +48,8 @@
     border: none;
     outline: none;
     border-radius: 32px;
+    padding: 4px;
+    padding-left: 12px;
 }
 
 #appc300 input[type=button], input[type=reset]{
@@ -43,17 +59,21 @@
     font-weight: bold;
     font-size: 27px;
     color: white;
-    padding: 18px 20px;
+    padding: 18px;
     margin: 1.5px;
     margin-top: 2px;
     border: 0;
     border-radius: 100%;
     background-color: rgb(59, 59, 59);
+    box-shadow: 1px 1px 5px rgba(10, 0, 0, 0.5)
 }
 
+#appc300 input[type=button]:hover {
+    background-color: rgb(94, 94, 94)
+}
 
 #appc300 .red {
-    background-color: rgb(82, 0, 0) !important;
+    background-color: rgb(94, 94, 94);
     color: white !important;
 
 }
