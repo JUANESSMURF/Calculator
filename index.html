@@ -14,7 +14,7 @@
 </head>
 <body id="mainp">
     <div class="container">
-        <div id="appc300">
+        <div class="appc300" id="appc300">
             <form name="calculator">
                 <input class="text-field" type="textfield" name="ans" value="" autocomplete="off" readoly >
                 <div class="buttons">
@@ -33,11 +33,11 @@
                     <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
                     <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="red">
                     <br>
-                    <div class="operation-buttons">
-                        <input type="reset" value="C" class="clear">
+                    <div >
+                        <input type="reset" value="C" class="red">
                         <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
-                        <input type="button" value="/" onclick="document.calculator.ans.value+='/'"class="division">
-                        <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                        <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="red">
+                        <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="red">
                     </div>
                 </div>
             </form>

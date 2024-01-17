@@ -1,6 +1,7 @@
 /*It makes the calculator to be at the center of the page*/
 #mainp {
     background-color: rgba(170, 0, 0, 0.795);
+    overflow: hidden;
 }
 
 .container { 
@@ -17,7 +18,7 @@
     cursor:default;
 }
 
-#appc300 {
+.appc300 {
     height: 420px;
     width: 300px;
     border-radius: 5px;
@@ -28,7 +29,7 @@
     
 }
 
-#appc300 form {
+.appc300 form {
     height: 100%;
     width: 100%;
     border-radius: 32px;
@@ -36,7 +37,7 @@
     
 }
 
-#appc300 input[type=textfield] {
+.appc300 input[type=textfield] {
     height: 25%;
     width: 270px;
     cursor: default;
@@ -52,7 +53,7 @@
     padding-left: 12px;
 }
 
-#appc300 input[type=button], input[type=reset]{
+.appc300 input[type=button], input[type=reset]{
     width: 21.5%;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
@@ -68,12 +69,19 @@
     box-shadow: 1px 1px 5px rgba(10, 0, 0, 0.5)
 }
 
-#appc300 input[type=button]:hover {
+.appc300 input[type=button]:hover {
+    background-color: rgb(94, 94, 94)
+}
+
+.appc300 input[type=reset]:hover{
     background-color: rgb(94, 94, 94)
 }
 
 #appc300 .red {
-    background-color: rgb(94, 94, 94);
-    color: white !important;
-
+    background-color: rgb(94, 94, 94)
 }
+
+#appc300 .red:hover {
+    background-color: rgb(59, 59, 59)
+}
+
